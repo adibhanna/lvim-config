@@ -6,6 +6,7 @@ lvim.plugins = {
     "olexsmir/gopher.nvim",
     "j-hui/fidget.nvim",
     "lvimuser/lsp-inlayhints.nvim",
+    "nvim-treesitter/nvim-treesitter-textobjects",
     "jose-elias-alvarez/typescript.nvim",
     {
         "simrat39/symbols-outline.nvim",
@@ -63,25 +64,4 @@ lvim.plugins = {
             }
         end,
     },
-    -- {
-    --     "zbirenbaum/copilot.lua",
-    --     event = { "VimEnter" },
-    --     config = function()
-    --         vim.defer_fn(function()
-    --             require("copilot").setup {
-    --                 plugin_manager_path = get_runtime_dir() .. "/site/pack/packer",
-    --                 suggestion = {
-    --                     auto_trigger = true,
-    --                     keymap = {
-    --                         accept = "<C-a>"
-    --                     }
-    --                 }
-    --             }
-    --         end, 100)
-    --     end,
-    -- },
-    -- {
-    --     "zbirenbaum/copilot-cmp",
-    --     after = { "copilot.lua", "nvim-cmp" },
-    -- },
 }
