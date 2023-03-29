@@ -5,6 +5,19 @@ lvim.plugins = {
     "fatih/vim-go",
     "olexsmir/gopher.nvim",
     "j-hui/fidget.nvim",
+    "lvimuser/lsp-inlayhints.nvim",
+    "jose-elias-alvarez/typescript.nvim",
+    {
+        "simrat39/symbols-outline.nvim",
+        config = function()
+            require("symbols-outline").setup()
+        end
+    },
+    "mxsdev/nvim-dap-vscode-js",
+    { 
+        "folke/trouble.nvim",
+        requires = "nvim-tree/nvim-web-devicons",
+    },
     "simrat39/rust-tools.nvim",
     {
         "saecki/crates.nvim",

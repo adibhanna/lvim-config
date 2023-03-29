@@ -4,7 +4,7 @@ vim.o.background = "dark"
 vim.g.gruvbox_material_background = "hard"
 lvim.builtin.alpha.active = true
 lvim.reload_config_on_save = true
--- lvim.builtin.illuminate.active = false
+lvim.builtin.illuminate.active = false
 -- lvim.builtin.bufferline.active = false
 -- lvim.builtin.alpha.mode = "dashboard"
 -- lvim.builtin.nvimtree.setup.view.side = "left"
@@ -29,4 +29,4 @@ reload "user.copilot"
 reload "user.telescope"
 reload "user.fidget"
 reload "user.whichkey"
-
+reload "user.inlay-hints"

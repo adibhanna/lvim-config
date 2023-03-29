@@ -40,6 +40,16 @@ local options = {
     title = true,
 }
 
+vim.opt.shortmess:append "c"
+
 for k, v in pairs(options) do
     vim.opt[k] = v
 end
+
+vim.cmd "set whichwrap+=<,>,[,],h,l"
+
+vim.filetype.add {
+    extension = {
+        conf = "dosini",
+    },
+}
