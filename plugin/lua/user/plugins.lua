@@ -9,13 +9,19 @@ lvim.plugins = {
     "nvim-treesitter/nvim-treesitter-textobjects",
     "jose-elias-alvarez/typescript.nvim",
     {
+        "folke/zen-mode.nvim",
+        config = function()
+            require("zen-mode").setup {}
+        end
+    },
+    {
         "simrat39/symbols-outline.nvim",
         config = function()
             require("symbols-outline").setup()
         end
     },
     "mxsdev/nvim-dap-vscode-js",
-    { 
+    {
         "folke/trouble.nvim",
         requires = "nvim-tree/nvim-web-devicons",
     },
