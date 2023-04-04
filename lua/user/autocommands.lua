@@ -160,3 +160,7 @@ vim.api.nvim_create_autocmd({ "CursorHold" }, {
     end
   end,
 })
+
+-- add extension to go filetype (for gno files)
+vim.api.nvim_command [[autocmd BufNewFile,BufRead *.gno set filetype=go]]
+
