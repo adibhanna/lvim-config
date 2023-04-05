@@ -15,14 +15,10 @@ lvim.builtin.treesitter.ensure_installed = {
     "gomod"
 }
 
-lvim.builtin.treesitter.ignore_install = { "haskell" }
+lvim.builtin.treesitter.ignore_install = { "haskell", "markdown" }
 lvim.builtin.treesitter.highlight.enable = true
-
-lvim.builtin.treesitter.ensure_installed = { "javascript" }
 lvim.builtin.treesitter.autotag.enable = true
-lvim.builtin.treesitter.auto_install = false
-
-lvim.builtin.treesitter.ignore_install = { "markdown" }
+lvim.builtin.treesitter.auto_install = true
 
 lvim.builtin.treesitter.textobjects = {
   select = {
