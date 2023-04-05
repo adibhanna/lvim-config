@@ -52,7 +52,7 @@ lvim.plugins = {
     config = function()
       vim.defer_fn(function()
         require("copilot").setup {
-          plugin_manager_path = os.getenv "LUNARVIM_RUNTIME_DIR" .. "/site/pack/packer",
+          -- plugin_manager_path = os.getenv "LUNARVIM_RUNTIME_DIR" .. "/site/pack/packer",
           suggestion = {
             auto_trigger = true,
             keymap = {

@@ -16,7 +16,7 @@ lvim.format_on_save.enabled = false
 lvim.builtin.lualine.sections.lualine_a = { "mode" }
 lvim.builtin.lualine.options.theme = "gruvbox-material"
 lvim.transparent_window = true
-lvim.builtin.terminal.active = true
+lvim.builtin.terminal.active = false
 lvim.builtin.alpha.active = true
 
 -- close nvimtree when opening a file
