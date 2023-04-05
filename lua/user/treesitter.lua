@@ -18,7 +18,6 @@ lvim.builtin.treesitter.ensure_installed = {
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enable = true
 
-
 lvim.builtin.treesitter.ensure_installed = { "javascript" }
 lvim.builtin.treesitter.autotag.enable = true
 lvim.builtin.treesitter.auto_install = false
