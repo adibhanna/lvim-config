@@ -29,10 +29,10 @@ lvim.builtin.treesitter.textobjects = {
       -- You can use the capture groups defined in textobjects.scm
       ["af"] = "@function.outer", -- select the outer function
       ["if"] = "@function.inner", -- select the inner function
-      ["at"] = "@class.outer",
-      ["it"] = "@class.inner",
-      ["ac"] = "@call.outer",
-      ["ic"] = "@call.inner",
+      ["at"] = "@class.outer", -- select the outer class
+      ["it"] = "@class.inner", -- select the inner class
+      ["ac"] = "@call.outer", -- select the outer call
+      ["ic"] = "@call.inner", -- select the inner call
       ["aa"] = "@parameter.outer", -- select the outer parameter
       ["ia"] = "@parameter.inner", -- select the inner parameter
       ["al"] = "@loop.outer",
