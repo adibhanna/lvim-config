@@ -16,6 +16,7 @@ require("typescript").setup {
     settings = {
       typescript = {
         inlayHints = {
+          includeInlayConstantValueHints = true,
           includeInlayEnumMemberValueHints = true,
           includeInlayFunctionLikeReturnTypeHints = true,
           includeInlayFunctionParameterTypeHints = false,

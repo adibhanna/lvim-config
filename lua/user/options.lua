@@ -1,3 +1,7 @@
+lvim.builtin.cmp.formatting = {
+    format = require("tailwindcss-colorizer-cmp").formatter
+}
+
 local options = {
     incsearch = true,                        -- make search act like search in modern browsers
     backup = false,                          -- creates a backup file

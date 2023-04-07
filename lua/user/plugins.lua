@@ -5,6 +5,21 @@ lvim.plugins = {
   "fatih/vim-go",
   "olexsmir/gopher.nvim",
   "j-hui/fidget.nvim",
+  {
+    "norcalli/nvim-colorizer.lua",
+    config = function()
+      require("colorizer").setup()
+    end,
+  },
+  {
+    "roobert/tailwindcss-colorizer-cmp.nvim",
+    -- optionally, override the default options:
+    config = function()
+      require("tailwindcss-colorizer-cmp").setup {
+        color_square_width = 2,
+      }
+    end,
+  },
   "lvimuser/lsp-inlayhints.nvim",
   {
     "nvim-treesitter/nvim-treesitter-textobjects",
@@ -51,15 +66,15 @@ lvim.plugins = {
     -- event = { "VimEnter" },
     config = function()
       -- vim.defer_fn(function()
-        require("copilot").setup {
-          -- plugin_manager_path = os.getenv "LUNARVIM_RUNTIME_DIR" .. "/site/pack/packer",
-          suggestion = {
-            auto_trigger = true,
-            keymap = {
-              accept = "<C-a>",
-            },
+      require("copilot").setup {
+        -- plugin_manager_path = os.getenv "LUNARVIM_RUNTIME_DIR" .. "/site/pack/packer",
+        suggestion = {
+          auto_trigger = true,
+          keymap = {
+            accept = "<C-a>",
           },
-        }
+        },
+      }
       -- end, 100)
     end,
   },
