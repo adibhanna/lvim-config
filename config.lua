@@ -15,10 +15,12 @@ lvim.builtin.treesitter.highlight.enabled = true
 lvim.builtin.dap.active = true
 lvim.format_on_save.enabled = false
 lvim.builtin.lualine.sections.lualine_a = { "mode" }
-lvim.builtin.lualine.options.theme = "gruvbox-material"
-lvim.transparent_window = false
+-- lvim.builtin.lualine.options.theme = "gruvbox-material"
+lvim.transparent_window = true
 lvim.builtin.terminal.active = true
 lvim.builtin.alpha.active = true
+
+lvim.builtin.breadcrumbs.active = true
 
 -- close nvimtree when opening a file
 lvim.builtin.nvimtree.setup.actions.open_file.quit_on_open = true
