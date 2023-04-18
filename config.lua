@@ -1,3 +1,4 @@
+-- lvim.colorscheme = "tokyonight-moon"
 lvim.colorscheme = "gruvbox-material"
 lvim.log.level = "warn"
 vim.o.background = "dark"
@@ -16,8 +17,9 @@ lvim.builtin.dap.active = true
 lvim.format_on_save.enabled = false
 lvim.builtin.lualine.sections.lualine_a = { "mode" }
 -- lvim.builtin.lualine.options.theme = "gruvbox-material"
-lvim.transparent_window = true
+lvim.transparent_window = false
 lvim.builtin.terminal.active = true
+lvim.builtin.terminal.open_mapping = "<C-t>"
 lvim.builtin.alpha.active = true
 
 lvim.builtin.breadcrumbs.active = true

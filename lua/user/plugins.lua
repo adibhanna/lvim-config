@@ -2,8 +2,7 @@
 lvim.plugins = {
   "gpanders/editorconfig.nvim",
   "sainnhe/gruvbox-material",
-  { "bluz71/vim-moonfly-colors", name = "moonfly"},
-  { "bluz71/vim-nightfly-colors", name = "nightfly"},
+  "folke/tokyonight.nvim",
   "fatih/vim-go",
   "olexsmir/gopher.nvim",
   "j-hui/fidget.nvim",
