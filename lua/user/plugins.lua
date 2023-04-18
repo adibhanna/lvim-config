@@ -29,12 +29,6 @@ lvim.plugins = {
   },
   "jose-elias-alvarez/typescript.nvim",
   {
-    "folke/zen-mode.nvim",
-    config = function()
-      require("zen-mode").setup {}
-    end,
-  },
-  {
     "simrat39/symbols-outline.nvim",
     config = function()
       require("symbols-outline").setup()
@@ -64,30 +58,18 @@ lvim.plugins = {
   },
   {
     "zbirenbaum/copilot.lua",
-    -- event = { "VimEnter" },
-    config = function()
-      -- vim.defer_fn(function()
-      require("copilot").setup {
-        -- plugin_manager_path = os.getenv "LUNARVIM_RUNTIME_DIR" .. "/site/pack/packer",
-        suggestion = {
-          auto_trigger = true,
-          keymap = {
-            accept = "<C-a>",
-          },
-        },
-      }
-      -- end, 100)
-    end,
+    -- cmd = "Copilot",
+    event = "InsertEnter",
   },
   {
     "zbirenbaum/copilot-cmp",
     after = { "copilot.lua" },
     config = function()
-      require("copilot_cmp").setup {
-        formatters = {
-          insert_text = require("copilot_cmp.format").remove_existing,
-        },
-      }
+      require("copilot_cmp").setup()
     end,
   },
+  "monaqa/dial.nvim",
+  -- "MunifTanjim/nui.nvim",
+  -- "jackMort/ChatGPT.nvim",
+  -- "Bryley/neoai.nvim"
 }

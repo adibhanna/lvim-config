@@ -1,3 +1,33 @@
+-- lvim.colorscheme = "tokyonight-moon"
+lvim.colorscheme = "gruvbox-material"
+lvim.log.level = "warn"
+vim.o.background = "dark"
+vim.g.gruvbox_material_background = "hard"
+-- TODO simethg
+
+lvim.builtin.alpha.active = true
+lvim.reload_config_on_save = true
+lvim.builtin.illuminate.active = false
+-- lvim.builtin.bufferline.active = false
+-- lvim.builtin.alpha.mode = "dashboard"
+-- lvim.builtin.nvimtree.setup.view.side = "left"
+lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
+lvim.builtin.breadcrumbs.active = true
+lvim.builtin.treesitter.highlight.enabled = true
+lvim.builtin.dap.active = true
+lvim.format_on_save.enabled = false
+lvim.builtin.lualine.sections.lualine_a = { "mode" }
+-- lvim.builtin.lualine.options.theme = "gruvbox-material"
+lvim.transparent_window = false
+lvim.builtin.terminal.active = true
+lvim.builtin.terminal.open_mapping = "<C-t>"
+lvim.builtin.alpha.active = true
+
+lvim.builtin.breadcrumbs.active = true
+
+-- close nvimtree when opening a file
+lvim.builtin.nvimtree.setup.actions.open_file.quit_on_open = true
+
 lvim.builtin.cmp.formatting = {
     format = require("tailwindcss-colorizer-cmp").formatter
 }
